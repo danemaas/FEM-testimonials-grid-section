@@ -1,0 +1,176 @@
+/*======= GOOGLE FONTS =======*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/*======= VARIABLES =======*/
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --verydark-grayish-blue: hsl(217, 19%, 35%);
+    --verydark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/*======= BASE =======*/
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 62.5%;
+}
+
+/*======= MAIN CLASSES =======*/
+.container {
+    width: 100%;
+    padding-inline: 2rem;
+    padding-block: 5rem;
+}
+
+.card {
+    height: 100%;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.profile-img {
+    width: 45px;
+    border-radius: 10rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.description {
+    font-size: .79rem;
+}
+
+.main-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sub-text {
+    font-size: .85rem;
+}
+
+.col-top-one .card {
+    background-color: var(--moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 1.5rem;
+    background-size: 90px 100px;
+}
+
+.col-top-one .profile-img, 
+.col-bot-two .profile-img {
+    border: 2px solid hsl(263, 61%, 69%);
+}
+
+.col-top-one .name, 
+.col-top-one .main-text {
+    color: var(--light-gray);
+}
+
+.col-top-one .description {
+    color: hsla(0, 0%, 81%, 0.5);
+}
+
+.col-top-one .sub-text {
+    color: hsla(0, 0%, 81%, 0.7);
+}
+
+.col-top-two .profile-img {
+    border: 2px solid hsla(210, 46%, 95%, 0.7);
+}
+
+.col-top-two .card {
+    background-color: var(--verydark-grayish-blue);
+}
+
+.col-top-two .name, 
+.col-top-two .main-text {
+    color: var(--light-grayish-blue);
+}
+
+.col-top-two .description {
+    color: hsla(210, 46%, 95%, 0.5);
+}
+
+.col-top-two .sub-text  {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+
+.col-bot-one .profile-img, 
+.small-col .profile-img {
+    border: 2px solid var(--white);
+}
+
+.col-bot-one .name, 
+.col-bot-one .main-text, 
+.small-col .name, 
+.small-col .main-text {
+    color: var(--verydark-grayish-blue);
+}
+
+.col-bot-one .description,
+.small-col .description {
+    color: hsla(217, 19%, 35%, .5);
+}
+
+.col-bot-one .sub-text,
+.small-col .sub-text {
+    color: hsla(217, 19%, 35%, .7);
+}
+
+.col-bot-two .card {
+    background-color: var(--verydark-blackish-blue);
+}
+
+.col-bot-two .name, .col-bot-two .main-text {
+    color: var(--light-grayish-blue);
+}
+
+.col-bot-two .description {
+    color: hsla(210, 46%, 95%, .5);
+}
+
+.col-bot-two .sub-text {
+    color: hsla(210, 46%, 95%, .7);
+}
+
+@media screen and (max-width: 1199px) {
+    .small-col .card {
+        height: 51%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .small-col .card {
+        height: 100%;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
